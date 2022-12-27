@@ -20,23 +20,29 @@
 html {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(1.5rem, 8vw -2rem, 3rem);
+    width: 75vw;
+    margin: 0 auto;
 }
 
 #title {
     text-align: center;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 5rem;
+    font-size: 5em;
     background-color: #12d7fa5b;
+    border-radius: 20px;
+    margin-top: .5rem;
 }
 
 .picture {
     text-align: center;
     background: rgba(0, 139, 139, 0.486);
+    border-radius: 20px;
 }
 
 .picture img {
     border-radius: 40rem;
-    width: 40rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar {
@@ -44,6 +50,7 @@ html {
     flex-direction: row;
     justify-content: center !important;
 }
+
 .navbar i {
     font-size: 3rem;
     cursor: pointer;
@@ -55,7 +62,14 @@ html {
     font-size: 1.8rem;
     text-align: center;
     margin: 2rem auto;
-    width: 75vw;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 1rem auto;
 }
 
 #personal_info:hover {
@@ -98,6 +112,7 @@ html {
     background: -webkit-linear-gradient(to right, #eb9588, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fc9585, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 20px;
+    padding: 1rem;;
 }
 
 .email_info{
@@ -105,6 +120,7 @@ html {
     background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 20px;
+    padding: 1rem;;
 }
 
 .phone_info {
@@ -112,6 +128,7 @@ html {
     background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border-radius: 20px;
+    padding: 1rem;;
 }
 
 .education_info {
@@ -119,6 +136,7 @@ html {
     background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border-radius: 20px;
+    padding: 1rem;;
 }
 
 .experience_info {
@@ -126,4 +144,5 @@ html {
     background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border-radius: 20px;
+    padding: 1rem;;
 }

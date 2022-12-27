@@ -49,6 +49,9 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center !important;
+    border: outset 3px lightblue;
+    border-radius: 5px;
+    background-color: #ebe286;
 }
 
 .navbar i {

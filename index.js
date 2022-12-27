@@ -14,7 +14,7 @@ let phoneContainer = document.getElementById('phone_container');
 let educationContainer = document.getElementById('education_container');
 let experienceContainer = document.getElementById('experience_container');
 
-// Usuario
+// Usuario para CV
 const user = {
     name: "Lionel",
     lastname: "Scaloni",

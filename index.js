@@ -26,10 +26,10 @@ const user = {
 }
 
 // Eventos
-title.innerHTML = `${user.name} ${user.lastname}`;
-picture.innerHTML = `<img src="${user.photo}" alt="profile pic">`;
+title.innerHTML = `${user.name} ${user.lastname} - CV.`;
+picture.innerHTML = `<img src="${user.photo}" alt="${user.lastname} profile pic">`;
 
-personalInfo.addEventListener('mouseover', (e) => {
+personalInfo.addEventListener('click', () => {
     emailContainer.innerHTML = '';
     experienceContainer.innerHTML = '';
     educationContainer.innerHTML = '';
@@ -44,7 +44,7 @@ personalInfo.addEventListener('mouseover', (e) => {
     
 });
 
-email.addEventListener('mouseover', () => {
+email.addEventListener('click', () => {
     personalInfoContainer.innerHTML ='';
     experienceContainer.innerHTML = '';
     educationContainer.innerHTML = '';
@@ -56,7 +56,7 @@ email.addEventListener('mouseover', () => {
                                 </div>`
 });
 
-phone.addEventListener('mouseover', () => {
+phone.addEventListener('click', () => {
     personalInfoContainer.innerHTML ='';
     emailContainer.innerHTML = '';
     experienceContainer.innerHTML = '';
@@ -68,7 +68,7 @@ phone.addEventListener('mouseover', () => {
                                 </div>`;
 });
 
-education.addEventListener('mouseover', () => {
+education.addEventListener('click', () => {
     personalInfoContainer.innerHTML ='';
     emailContainer.innerHTML = '';
     experienceContainer.innerHTML = '';
@@ -85,7 +85,7 @@ education.addEventListener('mouseover', () => {
                                     </div>`;
 });
 
-experience.addEventListener('mouseover', () => {
+experience.addEventListener('click', () => {
     personalInfoContainer.innerHTML ='';
     emailContainer.innerHTML = '';
     educationContainer.innerHTML = '';

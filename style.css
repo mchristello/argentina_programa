@@ -22,6 +22,13 @@ html {
     font-size: 62.5%;
     width: 75vw;
     margin: 0 auto;
+    background-color: #5a737d;
+}
+
+body {
+    border-radius: 20px;
+    background-color: #dadada !important;
+    filter: drop-shadow(-6px 6px 20px rgb(231, 231, 231));
 }
 
 #title {
@@ -29,13 +36,15 @@ html {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 6rem;
     background-color: #12d7fa5b;
+    border: 1px solid black;
     border-radius: 20px;
     margin-top: .5rem;
 }
 
 .picture {
     text-align: center;
-    background: rgba(0, 139, 139, 0.486);
+    background: rgba(78, 221, 244, 0.49);
+    border: 1px solid black;
     border-radius: 20px;
 }
 
@@ -50,7 +59,7 @@ html {
     flex-direction: row;
     justify-content: center !important;
     border: outset 3px lightblue;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #ebe286;
 }
 
@@ -75,72 +84,74 @@ ul li {
     margin: 1rem auto;
 }
 
-#personal_info:hover {
-    animation:wobble-horizontal-bottom .5s linear both;
+a {
+    color: #000 !important;
+    text-decoration: none;
 }
 
-#email:hover{
-    animation:wobble-horizontal-bottom .5s linear both;
+a {
+    background:
+        linear-gradient(to right,
+            rgba(100, 200, 200, 1),
+            rgba(100, 200, 200, 1)),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 800ms;
 }
 
-#phone:hover{
-    animation:wobble-horizontal-bottom .5s linear both;
+a:hover {
+    background-size: 0 3px, 100% 3px;
 }
-
-#education:hover{
-    animation:wobble-horizontal-bottom .5s linear both;
-}
-
-#experience:hover{
-    animation:wobble-horizontal-bottom .5s linear both;
-}
-
-@keyframes wobble-horizontal-bottom{
-    0%,
-    100%{
-        transform:translateX(0);transform-origin:50% 50%}
-    15%{
-        transform:translateX(-30px) rotate(-6deg)}
-    30%{
-        transform:translateX(15px) rotate(6deg)}
-    45%{
-        transform:translateX(-15px) rotate(-3.6deg)}
-    60%{
-        transform:translateX(9px) rotate(2.4deg)}
-    75%{
-        transform:translateX(-6px) rotate(-1.2deg)}}
 
 .personal_info {
-    background: -webkit-linear-gradient(to right, #eb9588, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc9585, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #bbb, #EBC63375);
+    background: linear-gradient(to right, #bbb, #EBC63375);
     border-radius: 20px;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
 }
 
-.email_info{
-    background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.email_info {
+    background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 20px;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
 }
 
 .phone_info {
-    background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d28c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f2fcfe, #1c92d2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 20px;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
 }
 
 .education_info {
-    background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B5AC49, #3CA55C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 20px;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
 }
 
 .experience_info {
-    background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 20px;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
 }
